@@ -1,6 +1,6 @@
 ![ci](https://github.com/AWS-WSU/Nebula-Link/actions/workflows/ci.yml/badge.svg)
 
-# <img src="https://cdn-icons-png.flaticon.com/512/8966/8966747.png" width="48" height="48" alt="blue wave icon"/> Welcome to Nebula-Link! 
+# <img src="https://cdn-icons-png.flaticon.com/512/8966/8966747.png" width="48" height="52" alt="blue wave icon"/> Welcome to Nebula-Link! 
 A cloud-based URL shortening service built by students, using JavaScript and AWS serverless architecture to provide hands-on experience with real-world cloud computing. 
 <br>
 <br>
