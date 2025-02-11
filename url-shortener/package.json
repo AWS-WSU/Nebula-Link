@@ -1,0 +1,12 @@
+{
+  "name": "nebula-link",
+  "version": "1.0.0",
+  "description": "A cloud-based URL shortening service built by students, using JavaScript and AWS serverless architecture to provide hands-on experience with real-world cloud computing.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx serve frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
