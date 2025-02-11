@@ -1,0 +1,13 @@
+{
+  "name": "nebula-link-infrastructure",
+  "version": "1.0.0",
+  "description": "Infrastructure for Nebula Link",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

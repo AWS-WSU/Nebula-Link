@@ -1,0 +1,35 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  frontend-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install Dependencies
+        run: |
+          cd frontend
+          npm install jest jest-environment-jsdom @testing-library/jest-dom
+      
+      - name: Run Frontend Tests
+        run: |
+          cd frontend
+          npm test
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install ESLint
+        run: npm install eslint
+      - name: Run ESLint
+        run: npx eslint .
