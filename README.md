@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/Wayne%20State%20University-AWS%20Cloud%20Club-yellow)
+<br>
 ![ci](https://github.com/AWS-WSU/Nebula-Link/actions/workflows/ci.yml/badge.svg)
 <br>
 ![Difficulty: Beginner](https://img.shields.io/static/v1?label=difficulty&message=beginner&color=blue)
