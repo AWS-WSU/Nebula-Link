@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Link - URL Shortener</title>
+    <link rel="stylesheet" href="/src/browser/styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nebula Link</h1>
+        <div class="form-container">
+            <input type="url" id="urlInput" placeholder="Enter your URL here" required>
+            <button onclick="shortenURL()">Shorten URL</button>
+        </div>
+        <div id="error" class="error-container"></div>
+        <div id="result" class="result-container">
+            <p id="shortUrl"></p>
+            <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+        </div>
+    </div>
+    <!-- Load scripts at the end of body -->
+    <script src="/src/lib/urlShortener.js"></script>
+    <script src="/src/browser/scripts/main.js"></script>
+</body>
+</html>
