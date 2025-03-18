@@ -1,0 +1,20 @@
+{
+  "name": "nebula-link",
+  "version": "1.0.0",
+  "description": "URL shortener for AWS Cloud Club",
+  "main": "src/lib/urlShortener.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "start": "http-server . -p 3000 -c-1 -o /src/index.html",
+    "dev": "npm run lint && npm run start"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "http-server": "^14.1.1",
+    "jest-environment-jsdom": "^27.0.6"
+  }
+}
