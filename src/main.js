@@ -8,7 +8,7 @@ let shortener;
 function initializeShortener() {
     try {
         const baseUrl = window.location.origin;
-        const shortener = new UrlShortener(baseUrl);
+        shortener = new UrlShortener(baseUrl);
         console.log("URL Shortener initialized successfully:", shortener);
         return shortener;
     } catch (error) {
