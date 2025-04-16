@@ -6,8 +6,17 @@ let shortener;
  * (hint: use the UrlShortener class and pass the current origin as the base URL)
  */
 function initializeShortener() {
-    // Initialize the shortener with proper error handling
+    try {
+        const baseUrl = window.location.origin;
+        const shortener = new UrlShortener(baseUrl);
+        console.log("URL Shortener initialized successfully:", shortener);
+        return shortener;
+    } catch (error) {
+        console.error("Failed to initialize the URL Shortener:", error);
+        return null;
+    }
 }
+
 
 /**
  * TODO: Create a function to handle the URL shortening process
